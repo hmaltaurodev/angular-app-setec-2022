@@ -1,0 +1,49 @@
+@import './../../../../../dist/scss/variables.scss';
+
+section {
+  width: 100%;
+  min-height: 250px;
+  background-color: $quaternary-background-color;
+  margin-top: 10px;
+
+  ul {
+    padding: 20px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+
+      input {
+        &[type='checkbox'] {
+          width: 5%;
+        }
+        &[type='text'] {
+          width: 100%;
+          padding: 5px 10px;
+          border: none;
+          font-size: 16px;
+          color: $tertiary-text-color;
+          &.checked {
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      button {
+        width: 12%;
+        padding: 5px;
+        border: none;
+        color: $secondary-text-color;
+        background-color: $secondary-background-button;
+
+        &.edit {
+          width: 8%;
+          background-color: $tertiary-background-button;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
